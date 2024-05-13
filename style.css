@@ -1,0 +1,113 @@
+body {
+    background-image: url(./image.png);
+    background-size: cover;
+    background-repeat: repeat-y;
+
+}
+
+.maincontainer {
+    margin: 0px 150px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navmenu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.an {
+    color: white;
+    text-decoration: none;
+}
+
+.section {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.sh1 {
+    font-size: 5em;
+}
+
+.button {
+    height: 40px;
+    width: 120px;
+    border-radius: 25px;
+    background-color: white;
+    justify-content: center;
+    font-size: larger;
+    gap: 10px;
+}
+
+.rightsection {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 220px 220px;
+    gap: 15px;
+}
+
+.box {
+    background-color: brown;
+}
+
+.box1 {
+    background-image: url(./pic-1.png);
+    background-size: cover;
+    text-align: center;
+    border: 2px;
+    border-radius: 10px;
+}
+
+.box2 {
+    background-image: url(./pic-2.png);
+    background-size: cover;
+    text-align: center;
+    border: 2px;
+    border-radius: 10px;
+}
+
+.box3 {
+    background-image: url(./pic-3.png);
+    text-align: center;
+    background-size: cover;
+    border: 2px;
+    border-radius: 10px;
+}
+
+.box4 {
+    background-image: url(./pic-4.png);
+    background-size: cover;
+    text-align: center;
+    border: 2px;
+    border-radius: 10px;
+}
+
+@media screen and (min-width:300px) and (max-width:600px) {
+    .box {
+        background-color: orange;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .section {
+        flex-direction: column;
+    }
+
+    .rightsection {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(4, 200px);
+    }
+}
